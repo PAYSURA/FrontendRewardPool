@@ -218,6 +218,10 @@ position: relative;
 cursor: pointer;
 }
 
+.left{
+	float: left;
+}
+
 header .header-element:hover{
 	background-color: #F2F2F2;
 }
@@ -231,4 +235,34 @@ header .header-element:before{
 	position: absolute;
 top: 7px;
 left: 9px;
+}
+
+.header-nav-bottom{
+	position: absolute;
+bottom: 5px;
+left: 10px;
+}
+
+.header-nav-bottom button{
+	cursor: pointer;
+}
+
+.btn-header {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  border: 0px;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.btn-header:hover {
+  background: #3cb0fd;
+  background-image: #3cb0fd;
+  text-decoration: none;
 }
