@@ -179,6 +179,10 @@
   }
 }
 
+.clear{
+	clear: both;
+}
+
 header {
 	width: 100%;
 	height: 250px;
@@ -208,4 +212,23 @@ header .header-element{
 border: 3px solid #000000;
 height: 50px;
 width: 50px;
+background-color: transparent;
+z-index: 999;
+position: relative;
+cursor: pointer;
+}
+
+header .header-element:hover{
+	background-color: #F2F2F2;
+}
+
+header .header-element-w{
+	width: 75px;
+	float:right;
+}
+
+header .header-element:before{
+	position: absolute;
+top: 7px;
+left: 9px;
 }
