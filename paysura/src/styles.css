@@ -190,7 +190,7 @@ header {
 	border-bottom: 3px solid #009DE0;
 }
 
-header img {
+header img.logo-paysura {
 	width: 300px;
 	height: 120px;
 	position: absolute;
@@ -203,6 +203,14 @@ header div#search-wrapper{
 margin: 0 auto;
 position: relative;
 top: 30%;
+}
+
+header #paysura-credit{
+	margin-right: 50px;
+}
+
+.bold{
+	font-weight: bold;
 }
 
 header .header-element{
@@ -220,6 +228,9 @@ cursor: pointer;
 
 .left{
 	float: left;
+}
+.right{
+	float: right;
 }
 
 header .header-element:hover{
@@ -239,8 +250,9 @@ left: 9px;
 
 .header-nav-bottom{
 	position: absolute;
-bottom: 5px;
-left: 10px;
+	bottom: 5px;
+	left: 10px;
+	width: 100%;
 }
 
 .header-nav-bottom button{
