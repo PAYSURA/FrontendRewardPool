@@ -1,13 +1,11 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {Product} from './product.model';
-import {ProductComponent} from './product.component';
 
 @NgModule({
     imports: [
         CommonModule
-    ],
-    declarations: [ProductComponent]
+    ]
 })
 export class ProductModule {
     carouselElements = [
