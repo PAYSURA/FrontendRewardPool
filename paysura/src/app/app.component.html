@@ -1,5 +1,8 @@
-<app-home>
+<app-home></app-home>
+<app-product>
+    <div class="carousel" *ngFor='let product of carouselELements; trackBy: index;'>
+        {{product}}}
+    </div>
+</app-product>
 
-<div class="carousel" *ngFor='let product of products; trackBy: index;'>
-	{product}</div>
-TEST </app-home>
+
