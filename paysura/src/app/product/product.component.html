@@ -1,18 +1,18 @@
 <div uib-carousel interval="5000" active="active">
-    <div uib-slide index="0">
-        <img ng-src="/img/zzzzz.png">
-        <div class="carousel-caption">
-            <p>
-                Txt here
-            </p>
-        </div>
-    </div>
-    <div uib-slide index="1">
-        <img ng-src="/img/xxxxx.png"/>
-        <div class="carousel-caption">
-            <p>
-                some text
-            </p>
+
+    <div *ngFor="let product of carouselElements; let i = index">
+        <div uib-slide>
+            <div class="product-thumbnail">
+                <img src="{{product.imagePath}}"/>
+            </div>
+            <div>
+                <h1>
+                    {{product.title}}
+                </h1>
+                <p>
+                    {{product.description}}
+                </p>
+            </div>
         </div>
     </div>
 </div>
