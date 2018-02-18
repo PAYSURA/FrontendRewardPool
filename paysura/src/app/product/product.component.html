@@ -1,11 +1,17 @@
 <div uib-carousel interval="5000" active="active">
 
     <div *ngFor="let product of carouselElements; let i = index">
-        <div uib-slide>
+        <div class="item-carousel">
             <div class="product-thumbnail">
                 <img src="{{product.imagePath}}"/>
             </div>
             <div>
+                <div class="price">
+                    {{product.price}} <img class="product_ipc" src="{{ipc_logo}}">
+                    <div class="old">
+                        {{product.priceOld}} <img class="product_ipc" src="{{ipc_logo}}">
+                    </div>
+                </div>
                 <h1>
                     {{product.title}}
                 </h1>

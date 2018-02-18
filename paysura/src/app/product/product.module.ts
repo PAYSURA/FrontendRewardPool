@@ -11,5 +11,6 @@ import {CarouselModule} from 'angular2-carousel';
 })
 export class ProductModule {
 
+
 }
 
