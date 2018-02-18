@@ -2,3 +2,20 @@
     width: 15px;
     height: 15px;
 }
+
+.product-thumbnail{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+.product-thumbnail img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-carousel{
+    padding: 5px;
+    margin: 15px;
+    border: 1px solid gray;
+    width: 320px;
+}
