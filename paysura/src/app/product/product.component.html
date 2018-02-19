@@ -1,9 +1,9 @@
 <div id="bg-wood" [ngStyle]="{'background-image': 'url(assets/img/bg.jpeg)'}">
-    <div uib-carousel interval="5000" active="active" id="carousel-wrapper" >
+    <div uib-carousel interval="5000" active="active" id="carousel-wrapper">
         <div *ngFor="let product of carouselElements; let i = index">
-            <div class="item-carousel {{i < carouselElements.length ? 'left' : ''}}">
+            <div class="item-carousel box effect8 {{i < carouselElements.length ? 'left' : ''}}">
                 <div class="product-thumbnail">
-                    <img src="{{product.imagePath}}"/>
+                    <img src="{{product.imagePath}}" [ngStyle]="{'width': product.width,'height': product.height}"/>
                 </div>
                 <div>
                     <div class="price">
@@ -15,9 +15,6 @@
                     <h1>
                         {{product.title}}
                     </h1>
-                    <p>
-                        {{product.description}}
-                    </p>
                 </div>
             </div>
         </div>
