@@ -278,3 +278,15 @@ left: 9px;
   background-image: #3cb0fd;
   text-decoration: none;
 }
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.clear{
+  clear: both;
+}

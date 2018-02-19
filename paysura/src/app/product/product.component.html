@@ -1,23 +1,26 @@
-<div uib-carousel interval="5000" active="active">
-    <div *ngFor="let product of carouselElements; let i = index">
-        <div class="item-carousel">
-            <div class="product-thumbnail">
-                <img src="{{product.imagePath}}"/>
-            </div>
-            <div>
-                <div class="price">
-                    {{product.price}} <img class="product_ipc" src="{{ipc_logo}}">
-                    <div class="old">
-                        {{product.priceOld}} <img class="product_ipc" src="{{ipc_logo}}">
-                    </div>
+<div id="bg-wood" [ngStyle]="{'background-image': 'url(assets/img/bg.jpeg)'}">
+    <div uib-carousel interval="5000" active="active" id="carousel-wrapper" >
+        <div *ngFor="let product of carouselElements; let i = index">
+            <div class="item-carousel {{i < carouselElements.length ? 'left' : ''}}">
+                <div class="product-thumbnail">
+                    <img src="{{product.imagePath}}"/>
                 </div>
-                <h1>
-                    {{product.title}}
-                </h1>
-                <p>
-                    {{product.description}}
-                </p>
+                <div>
+                    <div class="price">
+                        {{product.price}} <img class="product_ipc" src="{{ipc_logo}}">
+                        <div class="old">
+                            {{product.priceOld}} <img class="product_ipc" src="{{ipc_logo}}">
+                        </div>
+                    </div>
+                    <h1>
+                        {{product.title}}
+                    </h1>
+                    <p>
+                        {{product.description}}
+                    </p>
+                </div>
             </div>
         </div>
+        <div class="clear"></div>
     </div>
 </div>
