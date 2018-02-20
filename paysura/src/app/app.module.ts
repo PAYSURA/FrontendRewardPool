@@ -6,17 +6,19 @@ import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {ProductModule} from './product/product.module';
 import {ProductComponent} from './product/product.component';
+import { SpecialOffersComponent } from './special-offers/special-offers.component';
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        ProductComponent
+        ProductComponent,
+        SpecialOffersComponent,
     ],
     imports: [
         HttpClientModule,
         BrowserModule,
-        ProductModule
+        ProductModule,
     ],
     providers: [],
     bootstrap: [
