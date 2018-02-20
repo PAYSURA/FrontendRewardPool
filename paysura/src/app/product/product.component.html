@@ -1,4 +1,7 @@
 <div id="bg-wood" [ngStyle]="{'background-image': 'url(assets/img/bg.jpeg)'}">
+    <h1 class="title-wall">
+        Exchange your collected IPC for real values!
+    </h1>
     <div uib-carousel interval="5000" active="active" id="carousel-wrapper">
         <div *ngFor="let product of carouselElements; let i = index">
             <div class="item-carousel box effect8 {{i < carouselElements.length ? 'left' : ''}}">
@@ -7,12 +10,14 @@
                 </div>
                 <div>
                     <div class="price">
-                        {{product.price}} <img class="product_ipc" src="{{ipc_logo}}">
+                        <div class="current-price">
+                            {{product.price}} <img class="product_ipc" src="{{ipc_logo}}">
+                        </div>
                         <div class="old">
                             {{product.priceOld}} <img class="product_ipc" src="{{ipc_logo}}">
                         </div>
                     </div>
-                    <h1>
+                    <h1 class="product_title">
                         {{product.title}}
                     </h1>
                 </div>
