@@ -1,0 +1,21 @@
+.special-offer-box{
+    display: table;
+    float: left;
+    width: 15%;
+    margin-right: 1%;
+    height: 150px;
+    vertical-align: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    min-width: 200px;
+}
+
+.special-offer-box:hover{
+    cursor: pointer;
+}
+
+.special-offer-box p{
+    display: table-cell;
+    vertical-align: middle;
+}

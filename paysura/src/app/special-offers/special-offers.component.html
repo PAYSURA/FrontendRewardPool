@@ -3,8 +3,11 @@
         Special Offers up to 50%
     </h2>
     <div *ngFor="let specialOffer of specialOffers; let i = index">
-        <div>
-            {{specialOffer.title}}
+        <div class="special-offer-box" [ngStyle]="{'border':'3px solid '+specialOffer.color+'','color':''+specialOffer.color+''}">
+            <p [ngStyle]="{'color':''+specialOffer.color+''}">
+                {{specialOffer.title}}
+            </p>
+
         </div>
     </div>
 </div>
