@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { AppheaderComponent } from './appheader/appheader.component';
 import {HomeComponent} from './home.component';
 import { RegisterComponent } from './register/register.component';
+import { ProfileDashboardComponent } from './profile-dashboard/profile-dashboard.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { RegisterComponent } from './register/register.component';
         LoginComponent,
         AppheaderComponent,
         HomeComponent,
-        RegisterComponent
+        RegisterComponent,
+        ProfileDashboardComponent
     ],
     imports: [
         HttpClientModule,
