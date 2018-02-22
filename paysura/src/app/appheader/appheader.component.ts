@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppheaderComponent implements OnInit {
 
+  isLogged = false;
+
   constructor() { }
 
   ngOnInit() {
