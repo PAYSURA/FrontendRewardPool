@@ -21,6 +21,7 @@ export class SpecialOffersComponent implements OnInit {
     }
 
     ngOnInit() {
+
     }
 
 }

@@ -7,6 +7,9 @@ import {HttpClientModule} from '@angular/common/http';
 import {ProductModule} from './product/product.module';
 import {ProductComponent} from './product/product.component';
 import { SpecialOffersComponent } from './special-offers/special-offers.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { LoginComponent } from './login/login.component';
+import { AppheaderComponent } from './appheader/appheader.component';
 
 
 @NgModule({
@@ -14,11 +17,14 @@ import { SpecialOffersComponent } from './special-offers/special-offers.componen
         AppComponent,
         ProductComponent,
         SpecialOffersComponent,
+        LoginComponent,
+        AppheaderComponent,
     ],
     imports: [
         HttpClientModule,
         BrowserModule,
         ProductModule,
+        AppRoutingModule,
     ],
     providers: [],
     bootstrap: [
