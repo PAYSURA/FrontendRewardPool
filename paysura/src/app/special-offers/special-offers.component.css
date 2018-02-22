@@ -11,11 +11,17 @@
     min-width: 200px;
 }
 
-.special-offer-box:hover{
-    cursor: pointer;
-}
 
 .special-offer-box p{
     display: table-cell;
     vertical-align: middle;
+}
+
+
+.special-offer-box:hover{
+    cursor: pointer;
+}
+
+.special-offer-box p:hover{
+    background-color: lightgray;
 }

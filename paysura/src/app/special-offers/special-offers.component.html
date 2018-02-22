@@ -1,13 +1,16 @@
-<div>
-    <h2>
+<div style="width: 100%;margin: 0 auto;">
+    <h2 style="margin-bottom: 25px;">
         Special Offers up to 50%
     </h2>
-    <div *ngFor="let specialOffer of specialOffers; let i = index">
-        <div class="special-offer-box" [ngStyle]="{'border':'3px solid '+specialOffer.color+'','color':''+specialOffer.color+''}">
-            <p [ngStyle]="{'color':''+specialOffer.color+''}">
-                {{specialOffer.title}}
-            </p>
+    <div style="width: 60%; margin: 0 auto;">
+        <div *ngFor="let specialOffer of specialOffers; let i = index">
+            <div class="special-offer-box"
+                 [ngStyle]="{'border':'3px solid '+specialOffer.color+'','color':''+specialOffer.color+''}">
+                <p [ngStyle]="{'color':''+specialOffer.color+''}">
+                    {{specialOffer.title}}
+                </p>
 
+            </div>
         </div>
     </div>
 </div>
