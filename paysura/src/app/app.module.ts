@@ -10,6 +10,7 @@ import { SpecialOffersComponent } from './special-offers/special-offers.componen
 import { AppRoutingModule } from './/app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { AppheaderComponent } from './appheader/appheader.component';
+import {HomeComponent} from './home.component';
 
 
 @NgModule({
@@ -19,12 +20,13 @@ import { AppheaderComponent } from './appheader/appheader.component';
         SpecialOffersComponent,
         LoginComponent,
         AppheaderComponent,
+        HomeComponent
     ],
     imports: [
         HttpClientModule,
         BrowserModule,
         ProductModule,
-        AppRoutingModule,
+        AppRoutingModule
     ],
     providers: [],
     bootstrap: [
