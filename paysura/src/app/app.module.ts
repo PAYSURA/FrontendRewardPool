@@ -11,6 +11,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { AppheaderComponent } from './appheader/appheader.component';
 import {HomeComponent} from './home.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {HomeComponent} from './home.component';
         SpecialOffersComponent,
         LoginComponent,
         AppheaderComponent,
-        HomeComponent
+        HomeComponent,
+        RegisterComponent
     ],
     imports: [
         HttpClientModule,
