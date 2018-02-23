@@ -13,6 +13,8 @@ import { AppheaderComponent } from './appheader/appheader.component';
 import {HomeComponent} from './home.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileDashboardComponent } from './profile-dashboard/profile-dashboard.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {BusyModule} from 'angular2-busy';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { ProfileDashboardComponent } from './profile-dashboard/profile-dashboard
         HttpClientModule,
         BrowserModule,
         ProductModule,
-        AppRoutingModule
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        BusyModule
     ],
     providers: [],
     bootstrap: [

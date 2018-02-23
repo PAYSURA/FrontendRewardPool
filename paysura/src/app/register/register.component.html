@@ -1,3 +1,37 @@
-<p>
-  register works!
-</p>
+<div id="loader" *ngIf="loader">
+    <img src="/assets/img/ajax-loader.gif"> Please wait.
+</div>
+<div style="margin-bottom: 100px;">
+    <h1>Register</h1>
+</div>
+<div class="login-box">
+    <div id="logo-wrapper">
+        <img src="/assets/img/rsz_coin_logo.png" id="login-logo">
+    </div>
+    <div class="data-area">
+
+        <div>
+            <input type="text" required placeholder="Your Username" [value]="registerUser.username"
+                   (change)="registerUser.username = inputUsername.value" #inputUsername>
+        </div>
+        <div>
+            <input type="email" required placeholder="Your E-Mail address"
+                   (change)="registerUser.email = inputEmail.value" [value]="registerUser.email" #inputEmail>
+        </div>
+        <div>
+            <input type="text" required placeholder="Your Firstname" [value]="registerUser.firstname"
+                   (change)="registerUser.firstname = inputFirstname.value" #inputFirstname>
+        </div>
+        <div>
+            <input type="text" required placeholder="Your Lastname" [value]="registerUser.lastname" #inputLastname (change)="registerUser.lastname = inputLastname.value">
+        </div>
+        <div>
+            <input type="password" required placeholder="Your password" [value]="registerUser.password" #inputPassword (change)="registerUser.password = inputPassword.value">
+        </div>
+
+
+        <input type="submit" value="register" (click)="onRegister()">
+    </div>
+
+</div>
+
