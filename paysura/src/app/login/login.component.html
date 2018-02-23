@@ -1,3 +1,6 @@
+<div id="loader" *ngIf="loader">
+    <img src="/assets/img/ajax-loader.gif"> Please wait.
+</div>
 <div style="margin-bottom: 100px;">
     <h1>Login</h1>
 </div>
@@ -8,16 +11,18 @@
     <div class="data-area">
 
         <div>
-            <input type="email" required placeholder="Your E-Mail address">
+            <input type="email" required placeholder="Your E-Mail address" [value]="loginUser.email"
+                   (change)="loginUser.email = loginValue.value" #loginValue>
         </div>
 
         <div>
-            <input type="password" required placeholder="Your password">
+            <input type="password" required placeholder="Your password" #passwordValue
+                   (change)="loginUser.password = passwordValue.value" [value]="loginUser.password">
         </div>
         <div class="login-text-btn">
             Not already signed up? <a href="/register"> Register!</a>
         </div>
-        <input type="submit" value="login">
+        <input type="submit" value="login" (click)="login()">
     </div>
 
 </div>
