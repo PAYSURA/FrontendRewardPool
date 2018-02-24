@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {User} from '../model/user/user.model';
 import {UserService} from '../user.service';
+import {AlertsService} from '@jaspero/ng2-alerts/dist';
+
 
 @Component({
     selector: 'app-login',
@@ -13,7 +15,8 @@ export class LoginComponent implements OnInit {
     loginUser: User = new User();
     loader: boolean;
 
-    constructor(private userService: UserService) {
+    constructor(private userService: UserService, private alertService: AlertsService) {
+
     }
 
     private showLoader() {
@@ -29,8 +32,8 @@ export class LoginComponent implements OnInit {
             this.showLoader();
             const result = this.userService.findUser(this.loginUser.email, this.loginUser.password);
             if (result == null) {
-                alert('Invalid login');
                 this.hideLoader();
+                this.alertService.create('error', 'Invalid login!');
             } else {
                 const func = this;
                 setTimeout(function () {
@@ -40,7 +43,7 @@ export class LoginComponent implements OnInit {
                     window.sessionStorage.setItem('username', result.username);
                     window.sessionStorage.setItem('email', result.email);
                     func.hideLoader();
-                    alert(1);
+                    window.location.href = '/profile/dashboard';
                 }, 1000);
 
             }

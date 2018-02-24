@@ -1,17 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {UserService} from '../user.service';
 
 @Component({
-  selector: 'app-appheader',
-  templateUrl: './appheader.component.html',
-  styleUrls: ['./appheader.component.css']
+    selector: 'app-appheader',
+    templateUrl: './appheader.component.html',
+    styleUrls: ['./appheader.component.css'],
+    providers: [UserService]
 })
 export class AppheaderComponent implements OnInit {
 
-  isLogged = false;
+    isLogged = false;
 
-  constructor() { }
+    constructor(private userService: UserService) {
+        this.isLogged = userService.isLogged();
+    }
 
-  ngOnInit() {
-  }
+    public logout() {
+        this.userService.logout();
+        window.location.href = '/';
+    }
+
+    ngOnInit() {
+    }
 
 }

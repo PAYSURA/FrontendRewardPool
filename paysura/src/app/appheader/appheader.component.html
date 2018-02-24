@@ -86,13 +86,18 @@
         <button class="btn-header left">Local</button>
         <button class="btn-header left">Gift Cards</button>
         <button class="btn-header left">Help</button>
+
         <div class="right" id="paysura-credit">
             <span class="bold" style="font-size: 24px;">5000</span>
             <small style="font-size: 20px;padding-right: 10px;">USD</small>
             <b style="font-size: 26px">/</b> <span class="bold" style="font-size: 24px;color:darkblue">4764 <img
                 style="width:25px;height:25px;"
                 src="assets/img/rsz_coin_logo.png"/></span>
+            <div *ngIf="isLogged" class="right">
+                <button (click)="logout()" class="btn">Logout</button>
+            </div>
         </div>
+
         <div class="clear"></div>
     </div>
 </header>

@@ -29,8 +29,16 @@ export class UserService {
                 result = users[i];
             }
         }
-        console.log(result);
         return result;
+    }
+
+    public isLogged() {
+        return ((window.sessionStorage.getItem('logged') === null ||
+            typeof window.sessionStorage.getItem('logged') === 'undefined') ? false : true);
+    }
+
+    public logout() {
+        window.sessionStorage.clear();
     }
 
 }

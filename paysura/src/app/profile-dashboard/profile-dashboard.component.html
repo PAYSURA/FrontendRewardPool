@@ -1,3 +1,44 @@
-<p>
-  profile-dashboard works!
-</p>
+<app-appheader></app-appheader>
+
+<div>
+    <table id="customers">
+        <thead>
+        <tr>
+            <th>
+                Number
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                Size
+            </th>
+            <th>
+                Bought at
+            </th>
+            <th>
+                Final Price
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let order of orders; let i = index">
+            <td>
+                {{i+1}}
+            </td>
+            <td>
+                {{order.product.title}}
+            </td>
+            <td>
+                {{order.size}}
+            </td>
+            <td>
+                {{order.date}}
+            </td>
+            <td style="text-align: right">
+                {{order.finalPrice}}<span><img src="assets/img/rsz_coin_logo.png" style="margin-right: 5px;"></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

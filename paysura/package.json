@@ -21,9 +21,12 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@jaspero/ng2-alerts": "0.0.7",
     "angular2-busy": "^2.0.4",
     "angular2-carousel": "^1.0.12",
     "core-js": "^2.4.1",
+    "ng2-notify": "^1.4.0",
+    "ng2-notify-popup": "^0.1.25",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },

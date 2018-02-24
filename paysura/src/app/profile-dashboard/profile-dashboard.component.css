@@ -1,0 +1,55 @@
+
+table {
+    margin: 25px 10px 10px 10px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #333;
+    width: 98%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+table img {
+    width: 20px;
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+td, th {
+    border: 1px solid transparent; /* No more visible border */
+    height: 30px;
+    transition: all 0.3s; /* Simple transition for hover effect */
+}
+
+th {
+    background: #3498db; /* Darken header a bit */
+    color: white;
+    border-right: 1px solid white;
+    font-weight: bold;
+}
+
+td {
+    background: #FAFAFA;
+    text-align: center;
+    border-right: 1px solid lightgray;
+}
+
+/* Cells in even rows (2,4,6...) are one color */
+tr:nth-child(even) td {
+    background: #F1F1F1;
+}
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
+tr:nth-child(odd) td {
+    background: #FEFEFE;
+}
+
+tr td:hover {
+    background: #666;
+    color: #FFF;
+}
+
+/* Hover cell effect! */
